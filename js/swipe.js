@@ -1,0 +1,1 @@
+var swipe=new Hammer(document);swipe.on("swiperight swipeleft",function(a){a.preventDefault();"swiperight"==a.type?$(".swipe").animate({left:"0"}):$(".swipe").animate({left:"-100%"})});
