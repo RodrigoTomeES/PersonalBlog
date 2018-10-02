@@ -1,14 +1,7 @@
 /*CSS Document*/
 
-main .article_form {
-	width: 60%;
-	min-width: 950px;
-	height: 100%;
-	padding: 36px;
-	background: #fff;
-	margin-top: -250px;
-	margin-bottom: 36px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+main .article .image_contact {
+	background-image: url(../image/contact.jpg);
 }
 
 main .article_form .description_form {
@@ -18,38 +11,10 @@ main .article_form .description_form {
 	align-items: center;
 }
 
-main .article_form .description_form h2 {
-	width: 100%;
-	font-size: 50px;
-	font-weight: 400;
-	text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
-
-	/*FlexBox*/
-	display: flex;
-	justify-content: center;
-}
-
-main .article_form .description_form .image_contact {
-	max-width: 800px;
-	padding: 10px 20px;
-}
-
-main .article_form .description_form .image_contact img {
-	width: 100%;
-	height: 100%;
-}
-
-main .article_form .description_form p {
-	width: 100%;
-	max-width: 800px;
-	text-align: justify;
-	padding: 10px 20px;
-}
-
 main .article_form form {
 	width: 100%;
-	max-width: 800px;
-	padding: 10px 20px;
+	max-width: 65%;
+	padding: 20px;
 
 	/*FlexBox*/
 	display: flex;
@@ -100,24 +65,31 @@ main .article_form form div .form_group input[type="submit"]:hover {
 }
 
 @media all and (max-width: 1000px) {
-	main .article_form {
-		width: 80%;
-		min-width: 0;
+	main .article_form .description_form {
+		padding-bottom: 20px;
 	}
 
-	main .article_form form div {
+	main .article_form .description_form p {
+		max-width: 80%;
+	}
+
+	main .article_form .description_form form {
+		padding: 0;
+	}
+
+	main .article_form .description_form form div {
 		width: 90%;
 	}
 }
 
-@media all and (max-width: 550px) {
-	main .article_form {
-		width: 95%;
-		margin-top: -275px;
+@media all and (max-width: 800px) {
+	main .article_form .description_form {
+		padding-bottom: 56px;
 	}
+}
 
-	main .article_form .description_form p {
-		margin: 0;
-		line-height: 20px;
+@media all and (max-width: 550px) {
+	main .article_form .description_form form {
+		max-width: 80%;
 	}
 }
